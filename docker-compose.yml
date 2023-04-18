@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    environment:
+      - ANCHOR_PROVIDER_URL=https://api.mainnet-beta.solana.com
+      - ANCHOR_WALLET=./wallet.json
+    container_name: getPositionOrca
